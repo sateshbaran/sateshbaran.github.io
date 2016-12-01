@@ -25,7 +25,7 @@ $app->get('/', function (Request $request, Response $response) {
 });
 
 $app->get('/about', function (Request $request, Response $response) {
-	return $this->renderer->render($response, "about.phtml");
+	return $this->renderer->render($response, "/about.phtml");
 });
 
 $app->get('/signup', function (Request $request, Response $response) {
